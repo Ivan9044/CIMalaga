@@ -1,0 +1,494 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   GENERALES
+   ========================================================================== */
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase ;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+h2::after{
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
+}
+html{
+    box-sizing:border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/**-------------------- imagen --------------- **/
+
+div.hero{
+    background-image: url(../img/asesoria.jpg);
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+@media (min-width: 200px) and (max-width: 450px){
+    div.hero{
+        background-image: url(../img/asesoria.jpg);
+        background-position:center center;
+        background-size: cover;
+    }
+}
+div.contenido-header{
+    padding-top: 40px;
+}
+h1.nombre-sitio{
+    margin-top:;
+    padding: 250px 10% 10% 5%;
+    text-align: left;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 6px 6px 6px rgba(0,0,0,0.9);
+    font-size:8em;
+    color: yellow;
+}
+@media (max-width:200px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding: 5% 10%;
+    font-size:2.5em;
+    }
+}
+@media (min-width:200px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding: 5% 10%;
+    font-size:2.7em;
+    }
+}
+@media (max-width:350px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding:400px 5% 10% 2%;
+    font-size:4em;
+    }
+    div.hero{
+        background-image: url(../img/coaching.jpg);
+        background-position:center center;
+        background-size: cover;
+        height: 550px;
+    }
+}
+@media (max-width:600px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding:350px 10% 10% 2%;
+    font-size:5em;
+    }
+}
+@media (min-width:601px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding:310px 10% 10% 2%;
+    font-size:8em;
+    }
+}
+@media (min-width:1300px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding:310px 10% 10% 2%;
+    font-size:8em;
+    }
+}
+@media (min-width:1600px){
+    h1.nombre-sitio{
+    margin-top: 0;
+    padding:310px 10% 10% 2%;
+    font-size:8em;
+    }
+}
+
+/* -------  menu ----- */
+
+span.navbar-toggler-icon{
+    color: white;
+}
+nav.navbar-light,nav.navbar-nav, nav.bg-light{
+    background-color: #353535!important;
+    color: white!important;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+nav.navbar.navbar-expand-lg{
+      background-color: #353535;
+}
+a.nav-link{
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link{
+    color: #fe4918;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#fe4918;
+    background-color: rgba(0,0,0,.3);
+} 
+.navbar-light .navbar-toggler{
+    border-color: black;
+}
+
+/* ------- contendido ----- */
+
+.seccion{
+    padding: 50px 0;
+}
+.section p {
+    font-size: 1.2em;
+    text-align: center;
+}
+.button{
+    background-color: #353535;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .6 ease;
+    border: 1px solid #999999;
+}
+.button:hover{
+    background-color: #ffffff;
+    color:#353535;
+    text-decoration: none;
+}
+div.enlaces{
+    text-align: center;
+}
+
+/** ---------------- header ----------------------  **/
+
+
+
+ul.nav.navbar-nav li a{
+    color: white;
+}
+
+
+
+
+/*  -------- Footer ----------- */
+footer.site-footer{
+    background-color: #353535;
+    margin-top: 20px;
+    padding-top: 40px;
+    text-align:center;
+}
+div.columnas{
+    color: white;
+    text-align: center;
+}
+div.texto{
+    padding: 20px;
+}
+div.derechos{
+    text-align: center;
+}
+div.derechos p{
+    text-align: center;
+}
+div.columnas p{
+    text-align: center;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
