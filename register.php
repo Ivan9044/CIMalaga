@@ -30,7 +30,7 @@
         <div class="card-body">
             
             <?php
-            
+            // Esto lo hice medio borracho.
             $nombre   = '';
             $apellido = '';
             $email    = '';
@@ -59,7 +59,7 @@
                         $db = null;
                         
                         header('Location: aviso.php');
-                        echo 'hola';
+                        
                     } catch (\Exception $e) {
                         
                         echo '<div class="alert alert-danger alert-dismissible" role="alert">
